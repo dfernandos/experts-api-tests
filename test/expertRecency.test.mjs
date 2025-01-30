@@ -21,9 +21,6 @@ describe('Expert Recency API Tests', () => {
             "recency": ["<6"]
           }
         });
-
-      console.log("response -> ", res.body);
-
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property('experts').that.is.an('array');
 
@@ -48,8 +45,6 @@ describe('Expert Recency API Tests', () => {
           }
         });
 
-      console.log("response -> ", res.body);
-
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property('experts').that.is.an('array');
       expect(res.body.experts).to.have.lengthOf(3);
@@ -72,8 +67,6 @@ describe('Expert Recency API Tests', () => {
           }
         });
 
-      console.log("response -> ", res.body);
-
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property('experts').that.is.an('array');
       expect(res.body.experts).to.have.lengthOf(1);
@@ -89,8 +82,6 @@ describe('Expert Recency API Tests', () => {
       const res = await request("http://localhost:3000")
       .post('/all-experts')
         .send({});
-
-      console.log("response -> ", res.body);
 
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property('experts').that.is.an('array');
