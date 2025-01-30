@@ -7,9 +7,12 @@ This project is focused on API testing for the expert filtering system, specific
 Ensure you have the following dependencies installed before running the tests:
 
 - Node.js (Latest LTS version recommended)
-- npm or yarn
-- Mocha, Chai, Sinon for testing
-- Experts api 
+- npm
+- Mocha, Chai for testing
+- Experts api - follow the readMe instructions: https://github.com/dfernandos/experts-api
+ ```sh
+git clone git@github.com:dfernandos/experts-api.git
+```
 
 ### Install dependencies
 ```sh
@@ -56,10 +59,11 @@ The API expects a POST request to filter experts based on recency. The request s
 ```
 
 ## Test Implementation
-The tests are written using **Mocha, Chai, and Sinon** and mock API responses to validate correct filtering behavior.
+The tests are written using **Mocha, Chai ** and mock API responses to validate correct filtering behavior.
 
 ### Technologies Used
 - **Mocha**: Test runner
 - **Chai**: Assertion library
-- **Sinon**: Stubbing and mocking library
+
+
 
